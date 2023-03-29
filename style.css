@@ -1,0 +1,351 @@
+.Weather_app {
+    position: absolute;
+    width: 99%;
+    height: 960px;
+}
+.now{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: solid 2px black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search{
+    position: relative;
+    width: 596px;
+    height: 30px;
+    border: solid 2px black;
+    margin: -2px 0px 0px -2px;
+  
+}
+#search_input{
+    position: absolute;
+    width: 596px;
+    height: 30px;
+    border: solid 2px black;
+    margin: -2px 0px 0px -2px;
+    color: black;
+    text-align: left;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 900;
+}
+#search_img{
+    position: relative;
+    height: 28px;
+    width: 28px;
+    float: right;
+    margin: 2px 2px 0px -2px;
+    cursor: pointer;
+}
+#weather_block{
+    position: relative;
+    width: 60%;
+    height: 300px;
+    border: solid 2px black;
+    margin: 0px 2px 0px -2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+#temperature{
+    position: relative;
+    left: 7%;
+    top: 6%;
+    height: 100px;
+    width: 100px;
+    color: black;
+    text-shadow: 2px 3px 1px #ffffff;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+    font-weight: 900;
+}
+#weather_now{
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+#location_city{
+    position: relative;
+    float: left;
+    top: 53%;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 10px #ffffff;
+    margin-left: 5px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    font-weight: 900;
+}
+.tabs{
+    position: fixed;
+    border: solid 2px black;
+    height: 64px;
+    width: 360px;
+    margin: -2px 2px 0px -2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    top: 336px;
+    cursor: pointer;
+}
+#tab_now{
+    border: solid 2px black;
+    height: 64px;
+    width: 120px;
+    position: relative;
+    margin: -2px 2px 0px -2px;
+    background: black;
+    color: white;
+}
+#tab_details{
+    border: solid 2px black;
+    height: 64px;
+    width: 120px;
+    position: absolute;
+    margin: -68px 0px 0px 120px;
+}
+#tab_forecast{
+    border: solid 2px black;
+    height: 64px;
+    width: 116px;
+    position: absolute;
+    margin: -68px 0px 0px 242px;
+}
+.inf{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    font-weight: 900;
+}
+.added_locations{
+    position: fixed;
+    border: solid 2px black;
+    height: 40px;
+    width: 238px;
+    margin: -304px 2px 0px 0px;
+    margin-left: 360px;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 28px;
+    font-weight: 900;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    top: 336px;
+}
+#added_locations_li{
+    position: relative;
+    border: solid 2px black;
+    height: 324px;
+    width: 238px;
+    overflow: auto;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 28px;
+    font-weight: 900;
+    margin: 2px 0px 0px -2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+li{
+list-style-type: none;
+
+}
+#add_item:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+#added_locations_li::-webkit-scrollbar{
+    width: 15px;
+    background-color: black;
+} 
+#added_locations_li::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+} 
+#added_locations_li::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff, #bdbdbd);
+}
+
+#details{
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    border: solid 2px black;
+    margin: -304px 3px 0px -2px;
+    background: white;
+    background-size: cover;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    display: none;
+}
+#details_city{
+    position: relative;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 28px;
+    font-weight: 900;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.details_info{
+    position: relative;
+    margin: -18px 3px 0px -2px;
+    padding-left: 10px;
+    width: 360px;
+    height: 240px;
+    text-align: left;
+    font-family: 'Segoe UI';
+    font-size: 28px;
+    font-weight: 900;
+}
+#forecast{
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    border: solid 2px black;
+    margin: -304px 3px 0px -2px;
+    background: white;
+    background-size: cover;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    overflow: auto;
+    display: none;
+}
+#forecast_block{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 120px;
+    border: solid 2px black;
+    border-radius: 5px;
+   margin: 10px 0px 0px 0px;
+}
+#forecast_data{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 900;
+    left: 10px;
+    top: 5px;
+}
+#forecast_time{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 900;
+    left: 125px;
+    top: 5px;
+}
+#forecast_temperature{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: 900;
+    height: 0px;
+    left: 10px;
+    top: 35px;
+}
+#forecast_feels{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 19.3px;
+    font-weight: 900;
+    left: 10px;
+    top: 60px;
+}
+#forecast_img{
+    position: relative;
+    height: 50px;
+    width: 50px;
+   
+    background-size: cover;
+    top: 5px;
+    left: 80%;
+}
+#forecast::-webkit-scrollbar{
+    width: 15px;
+    background-color: black;
+} 
+#forecast::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+} 
+#forecast::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff, #bdbdbd);
+}
+
+#add {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background: url('img/add.png') 100% 100% no-repeat;
+    background-size: cover;
+    left: 300px;
+    top: 240px;
+    cursor: pointer;
+}
+#del_item {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url('img/delete.png') 100% 100% no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    top: -33px;
+    z-index: 2;
+}
+#add_item{
+    height: 40px;
+    width: 100%;
+}
+#start {
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    border: solid 2px black;
+    margin: -304px 3px 0px -2px;
+    background: white;
+    background-size: cover;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    overflow: auto;
+    display: block;
+}
+#starth{
+    position: relative;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+    font-weight: 900;
+    top: 90px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+}

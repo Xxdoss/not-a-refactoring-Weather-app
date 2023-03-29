@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Weather_app"> 
+        <div class="now">
+            <div class ='search'>
+                <form id ='dd'><input id ='search_input' type="text" placeholder="Enter search location"></form>
+                <img id ='search_img' src="img/search.png">
+            </div>
+            <div id="weather_block">
+                <div id="temperature">12°</div>
+                <div id="weather_now"></div>
+                <span id="location_city">Vladivostok</span>
+                <div id="add"></div>
+            </div>
+            <div class="tabs">
+                <div id="tab_now"><h1 class="inf">Now</h1></div>
+                <div id="tab_details"><h1 class="inf">Details</h1></div>
+                <div id="tab_forecast"><h1 class="inf">Forecast</h1></div>
+            </div>
+            <div class="added_locations"> Added locations
+                <div id="added_locations_li">
+                </div>
+            </div>
+            <div id="details">
+                <div id="details_block">
+                    <h1 id="details_city">Vladivostok</h1>
+                    <div class="details_info">
+                        <li id="details_temperature"></li>
+                        <li id="details_feels"></li>
+                        <li id="details_weather"></li>
+                        <li id="details_sunrise"></li>
+                        <li id="details_sunset"></li>
+                    </div>
+                </div>
+            </div>
+            <div id="forecast">
+
+            </div>
+            <div id="start">
+                <h1 id="starth"> Select added locations or enter new location</h1>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
